@@ -15,7 +15,7 @@
   Arm.prototype.reward = function(value) {
 
     this.count++
-    alert(this.count);
+    alert("Count" + this.count);
     this.sum += value
   }
 
