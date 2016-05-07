@@ -8,19 +8,19 @@
 
   function Arm() { }
 
-  Arm.count = 0
+  Arm.prototype.count = 0
 
   Arm.prototype.sum = 0
 
   Arm.prototype.reward = function(value) {
 
-    Arm.count++
+    Arm.prototype.count++
     alert("Count: " + Arm.count);
     this.sum += value
   }
 
   Arm.prototype.sample = function() {
-    return this.rbeta(1 + this.sum, 1 + Arm.count - this.sum)
+    return this.rbeta(1 + this.sum, 1 + Arm.prototype.count - this.sum)
   }
 
   Arm.prototype.rbeta = function(a, b) {
